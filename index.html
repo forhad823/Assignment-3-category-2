@@ -3,16 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- sora font from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .sora-font {
+        font-family: "Sora", serif;
+      }
+    </style>
     <!-- tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-clifford: #da373d;
       }
+      .alignment {
+        @apply mx-auto p-4 md:px-14;
+      }
+      .paragraph {
+        @apply font-light lg:text-xl;
+      }
     </style>
+
+    <script
+      src="https://kit.fontawesome.com/87cc45199e.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="assets/logo-header.png" />
     <title>Nature's platter</title>
   </head>
-  <body></body>
+  <body class="sora-font">
+    <header class="bg-[#EFEBE3]">
+      <!-- navbar section -->
+      <nav class="alignment border-b border-green-600 sm:border-none">
+        <div class="flex justify-between items-center">
+          <img
+            class="h-7 lg:h-10"
+            src="assets/logo-header.png"
+            alt="site-logo"
+          />
+          <ul class="hidden lg:flex gap-3 pl-32">
+            <li>Product</li>
+            <li>Service</li>
+            <li>Contact us</li>
+          </ul>
+
+          <div class="hidden lg:flex gap-3 justify-between items-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="scale-x-[-1] fa-solid fa-cart-shopping"></i>
+            <button class="px-4 py-1 border rounded-lg border-green-500">
+              Login
+            </button>
+            <button class="text-white px-4 py-1 rounded-lg bg-green-600">
+              Register
+            </button>
+          </div>
+
+          <div class="sm:hidden p-0 m-0" id="menu-icon">
+            <i class="text-green-600 fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <div
+        class="alignment flex flex-col justify-center items-center text-center mt-4 lg:mt-8"
+      >
+        <div class="lg:w-[70%]">
+          <!-- animation section -->
+          <h1 class="text-3xl lg:text-6xl font-semibold">
+            Freshness
+            <span class="animate-pulse text-green-600"
+              >You Can <br />
+              Count</span
+            >
+
+            On, Prices You'll Love!
+          </h1>
+          <br />
+          <p class="paragraph">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we've got you covered every day!
+          </p>
+          <br /><br />
+        </div>
+        <!-- banner-image -->
+        <img
+          class="lg:w-[85%]"
+          src="assets/hero-vegetables.png"
+          alt="banner-image"
+        />
+      </div>
+    </header>
+  </body>
 </html>
