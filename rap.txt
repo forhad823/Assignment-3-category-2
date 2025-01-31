@@ -1,0 +1,14 @@
+star icon
+
+<i class="fa-solid fa-star text-3xl text-amber-500" aria-hidden="true"></i>
+
+              <div
+                class="right-[6%] top-[31%] lg:top-[52%] object-cover w-[60%] absolute"
+              >
+                <img src="assets/vegetable-offer.png" alt="vegetable" />
+              </div>
+
+pb-[40%] (whas removed from ) 
+            <div
+              class="relative pt-9 pb-[40%] pl-[10%] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg col-span-2 lg:col-span-1 lg:row-span-3"
+            >
