@@ -25,7 +25,10 @@
         @apply mx-auto p-4 md:px-14;
       }
       .paragraph {
-        @apply font-light lg:text-xl;
+        @apply font-light lg:text-xl text-slate-500;
+      }
+      .section-title {
+        @apply text-2xl lg:text-3xl font-semibold text-green-600;
       }
     </style>
 
@@ -70,7 +73,7 @@
         </div>
       </nav>
       <!-- banner section -->
-      <div
+      <section
         class="alignment flex flex-col justify-center items-center text-center mt-4 lg:mt-8"
       >
         <div class="lg:w-[70%]">
@@ -97,7 +100,66 @@
           src="assets/hero-vegetables.png"
           alt="banner-image"
         />
-      </div>
+      </section>
     </header>
+    <main>
+      <!-- service section -->
+      <section class="w-full my-5">
+        <div class="alignment">
+          <h2 class="section-title">Service</h2>
+          <br />
+          <!-- service card container -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+            <!-- card -->
+            <div
+              class="p-8 flex gap-4 flex-auto flex-col justify-center items-center text-center bg-[#EFEBE3] rounded-lg"
+            >
+              <div
+                class="w-24 h-24 p-4 object-cover rounded-full bg-white lg:[ w-28 h-28 p-5]"
+              >
+                <img src="assets/service.png" alt="card-image" />
+              </div>
+              <h3 class="font-semibold text-xl lg:text-2xl">24/7 Services</h3>
+              <p class="paragraph">
+                We are available all the time, ensuring support and solutions
+                whenever you need them.
+              </p>
+            </div>
+            <!-- card -->
+            <div
+              class="p-8 flex gap-4 flex-auto flex-col justify-center items-center text-center bg-[#EFEBE3] rounded-lg"
+            >
+              <div
+                class="w-24 h-24 p-4 object-cover rounded-full bg-white lg:[ w-28 h-28 p-5]"
+              >
+                <img src="assets/delivery.png" alt="card-image" />
+              </div>
+              <h3 class="font-semibold text-xl lg:text-2xl">Fast Delivery</h3>
+              <p class="paragraph">
+                Get your orders delivered quickly with our efficient and
+                reliable shipping process today.
+              </p>
+            </div>
+            <!-- card -->
+            <div
+              class="p-8 flex gap-4 flex-auto flex-col justify-center items-center text-center bg-[#EFEBE3] rounded-lg"
+            >
+              <div
+                class="w-24 h-24 p-4 object-cover rounded-full bg-white lg:[ w-28 h-28 p-5]"
+              >
+                <img src="assets/healthy.png" alt="card-image" />
+              </div>
+              <h3 class="font-semibold text-xl lg:text-2xl">
+                Healthy Products
+              </h3>
+              <p class="paragraph">
+                Enjoy fresh, high-quality goods made with natural ingredients
+                for a healthier lifestyle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
