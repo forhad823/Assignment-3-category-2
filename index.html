@@ -40,7 +40,7 @@
     <link rel="icon" type="image/x-icon" href="assets/logo-header.png" />
     <title>Nature's platter</title>
   </head>
-  <body style="max-width: 1024px; margin: 0 auto" class="sora-font">
+  <body style="max-width: 1440px; margin: 0 auto" class="sora-font">
     <header class="bg-[#EFEBE3]">
       <!-- navbar section -->
       <nav class="alignment border-b border-green-600 sm:border-none">
@@ -102,7 +102,7 @@
         />
       </section>
     </header>
-    <main>
+    <main class="pb-60 relative">
       <!-- service section -->
       <section class="w-full py-14">
         <div class="alignment">
@@ -478,5 +478,73 @@
         </div>
       </section>
     </main>
+    <footer class="relative pt-72 w-full bg-[#179800]">
+      <section class="mx-auto px-4 md:px-14">
+        <!-- grocery news section -->
+        <section
+          class="absolute bottom-[100%] translate-y-1/2 bg-[#EFEBE3] rounded-xl px-3 py-8 grid grid-rows-[50%_1fr] lg:grid-rows-1 lg:grid-cols-2 gap-10 lg:gap-0 w-[93%] lg:w-[89%]"
+        >
+          <div
+            class="flex w-[80%] h-[90%] object-cover justify-center items-center text-center m-auto"
+          >
+            <img src="assets/vegetable-busket.png" alt="vegetable busket" />
+          </div>
+          <div
+            class="flex flex-col lg:justify-center items-center text-center lg:items-start gap-3 lg:gap-5"
+          >
+            <h2
+              class="text-2xl lg:text-3xl font-semibold text-green-600 lg:text-black"
+            >
+              Get Grocery News!
+            </h2>
+            <p>Exclusive training tips, ticks, product deals and more.</p>
+            <input
+              class="h-[35%] w-[95%] lg:w-[80%] lg:h-[15%] pl-4 placeholder-gray-400 placeholder:text-[10px] bg-white rounded-lg"
+              type="email"
+              placeholder="Enter email"
+              name=""
+              id=""
+            />
+            <button class="text-white px-4 py-1 rounded-lg bg-green-600">
+              Subscribe
+            </button>
+          </div>
+        </section>
+        <!-- footer section -->
+        <section class="pb-14 text-white grid lg:grid-cols-3">
+          <!-- logo+description -->
+          <div class="space-y-3">
+            <img
+              class="h-7 lg:h-10"
+              src="assets/logo-footer.png"
+              alt="logo-footer"
+            />
+            <p class="text-slate-300">
+              Discover a world of treats, toys, and essentials handpicked for
+              your furry friends
+            </p>
+          </div>
+          <!-- list -->
+          <div class="pt-10 lg:pt-6">
+            <ul class="flex flex-col lg:pl-20 gap-3">
+              <li>Product</li>
+              <li>Services</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <!-- social media icon -->
+          <div class="pt-10 space-y-3">
+            <p>Follow Us</p>
+            <!-- icons -->
+            <div class="flex gap-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </section>
+      </section>
+    </footer>
   </body>
 </html>

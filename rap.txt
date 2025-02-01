@@ -12,3 +12,22 @@ pb-[40%] (whas removed from )
             <div
               class="relative pt-9 pb-[40%] pl-[10%] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg col-span-2 lg:col-span-1 lg:row-span-3"
             >
+
+footer background-color: #179800
+
+<style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+      .alignment {
+        @apply mx-auto p-4 md:px-14;
+      }
+      .paragraph {
+        @apply font-light lg:text-xl text-slate-500;
+      }
+      .section-title {
+        @apply text-2xl lg:text-3xl font-semibold text-green-600;
+      }
+    </style>
+
+  
