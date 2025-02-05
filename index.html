@@ -102,7 +102,7 @@
         />
       </section>
     </header>
-    <main class="pb-60 relative">
+    <main class="pb-60">
       <!-- service section -->
       <section class="w-full py-14">
         <div class="alignment">
@@ -549,12 +549,14 @@
         </div>
       </section>
     </main>
-    <footer class="relative pt-72 w-full bg-[#179800]">
-      <section class="mx-auto px-4 md:px-14">
+    <footer class="w-full bg-[#179800]">
+      <section class="alignment">
         <!-- grocery news section -->
         <section
-          class="absolute bottom-[100%] translate-y-1/2 bg-[#EFEBE3] rounded-xl px-3 py-8 grid grid-rows-[50%_1fr] lg:grid-rows-1 lg:grid-cols-2 gap-10 lg:gap-0 w-[93%] lg:w-[89%]"
+          class="-translate-y-1/2 bg-[#EFEBE3] rounded-xl px-3 py-8 grid grid-rows-[50%_1fr] lg:grid-rows-1 lg:grid-cols-2 gap-10 lg:gap-0"
         >
+          <!-- see code-comments below about -translate-y-1/2 -->
+
           <div
             class="flex w-[80%] h-[90%] object-cover justify-center items-center text-center m-auto"
           >
@@ -619,3 +621,23 @@
     </footer>
   </body>
 </html>
+
+<!-- Understanding the Effect of -translate-y-1/2
+✅ -translate-y-1/2 moves the element upwards without removing it from the document flow.
+🔹 What -translate-y-1/2 Does?
+-translate-y-1/2 is a transform utility in Tailwind.
+It moves the element upward by 50% of its own height from its normal position.
+Key point: It does NOT move relative to its parent; it moves based on its own size.
+🔹 How does this affect <element>?
+Without -translate-y-1/2, the <element> is fully inside <footer>.
+When -translate-y-1/2 is applied, it shifts up by half of its height.
+Since it's only being translated (not absolutely positioned), it remains within the normal document flow.
+The Default Document Flow Did the Work
+
+The browser naturally places <element> inside <footer>.
+When you applied -translate-y-1/2, it moved visually into <main> without breaking the document flow.
+No Need for Positioning (absolute, relative)
+
+Unlike absolute, translate-y does not remove the element from the layout.
+The space occupied by <element> in <footer> remains unchanged, even though the element appears shifted.
+-->
